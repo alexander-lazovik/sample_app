@@ -24,5 +24,6 @@ Rails.application.routes.draw do
 # GET	/password_resets/<token>/edit	edit	edit_password_reset_path(token)
 # PATCH	/password_resets/<token>	update	password_reset_url(token)
 
+  resources :microposts,          only: [:create, :destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
